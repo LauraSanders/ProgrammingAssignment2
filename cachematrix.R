@@ -1,4 +1,8 @@
-##  makeCacheMatrix makes a special "matrix" containing a function to
+## Two functions that will create the inverse of a matrix
+## 1. makeCachematrix
+## 2. cacheSolve
+
+## makeCacheMatrix makes a special "matrix" containing a function to
 ## 1. set the value of the matrix (m<-NULL set<- function(y){x<<-y m<<-NULL})
 ## 2. get the value of the matrix (get<-function()x)
 ## 3. set the value of the inverse matrix (setinverse<-function(solve) m<<-solve)
