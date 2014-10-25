@@ -3,10 +3,10 @@
 ## 2. cacheSolve
 
 ## makeCacheMatrix makes a special "matrix" containing a function to
-## 1. set the value of the matrix (m<-NULL set<- function(y){x<<-y m<<-NULL})
-## 2. get the value of the matrix (get<-function()x)
-## 3. set the value of the inverse matrix (setinverse<-function(solve) m<<-solve)
-## 4. get the value of the inverse matrix (getinverse<-function()m)
+## 1. set the value of the matrix (set function)
+## 2. get the value of the matrix (get function)
+## 3. set the value of the inverse matrix (setinverse function)
+## 4. get the value of the inverse matrix (getinverse)
 
 makeCacheMatrix <- function(x = matrix()) {
     m<-NULL
@@ -23,9 +23,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve calculates the inverse of the special "matrix" created with the makeCacheMatrix 
 ## function. 
-## It checks first to see if the inverse is already calculated. If it has been calculated it 
-## takes the inverse from the cache and skips the computation. Otherwise it calculates the  
-## inverse and sets the value of the inverse in the cache via the setinverse function.
+## It checks first to see if the inverse matrix is already calculated. If it has been calculated it 
+## takes the inverse matrix from the cache and skips the computation. Otherwise it calculates the  
+## inverse matrix and sets the value of the inverse matrix in the cache.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
