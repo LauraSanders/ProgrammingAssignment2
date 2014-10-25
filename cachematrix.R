@@ -6,7 +6,7 @@
 ## 1. set the value of the matrix (set function)
 ## 2. get the value of the matrix (get function)
 ## 3. set the value of the inverse matrix (setinverse function)
-## 4. get the value of the inverse matrix (getinverse)
+## 4. get the value of the inverse matrix (getinverse function)
 
 makeCacheMatrix <- function(x = matrix()) {
     m<-NULL
